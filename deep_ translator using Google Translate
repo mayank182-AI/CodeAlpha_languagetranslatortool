@@ -1,0 +1,10 @@
+from deep_translator import GoogleTranslator
+
+# Create a translator instance
+translator = GoogleTranslator(source="auto", target="english")
+
+# Get supported languages
+languages = translator.get_supported_languages(as_dict=True)
+
+# Print them
+print(languages)
